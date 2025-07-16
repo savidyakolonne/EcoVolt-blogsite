@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback-EcoVolt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/ecovlotlogotrnsnew.png" alt="Logo">
+                </a>
+            </div>
+  
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="sitemap.html">SiteMap</a></li>
+  
+            </ul>
+  
+            <div class="profile">
+                <a href="profile.html">
+                    <img src="images/profileicon.png" alt="Profile Picture">
+                </a>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+    <div class="container1">
+        <div class="section-header">
+            <h2 class="title">What Our Clients Say</h2>
+        </div>
+        <div class="testimonials">
+            <div class="testimonials-item">
+                <img src="images/feedbkUser4.jpg" alt="Emma Carter">
+                <h3 class="name">Emma Carter</h3>
+                <span class="job">Founder, GreenFuture Solutions</span>
+                <p>"EcoVolt is an outstanding platform for sustainable energy solutions. Their guidance is invaluable."</p>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonials-item">
+                <img src="images/feedbkUser3.jpg" alt="Michael Reynolds">
+                <h3 class="name">Michael Reynolds</h3>
+                <span class="job">Environmental Consultant</span>
+                <p>"EcoVolt has been a game-changer for clean energy enthusiasts. Highly recommended!"</p>
+                <div class="rating">★★★☆☆</div>
+            </div>
+            <div class="testimonials-item">
+                <img src="images/feebkUser2.jpg" alt="Sophia Lee">
+                <h3 class="name">Sophia Lee</h3>
+                <span class="job">Environmental Consultant</span>
+                <p>"The team at EcoVolt is truly passionate about sustainability and their work is inspiring."</p>
+                <div class="rating">★★★★☆</div>
+            </div>
+            <div class="testimonials-item">
+                <img src="images/feedbkUser1.jpg" alt="John Doe">
+                <h3 class="name">John Doe</h3>
+                <span class="job">Renewable Energy Advocate</span>
+                <p>"EcoVolt is my go-to resource for staying updated on green energy trends."</p>
+                <div class="rating">★★★★☆</div>
+            </div>
+            
+        </div>
+        
+        <button class="button" onclick="window.location.href='#form'">Give Feedback</button>
+        
+    </div>
+
+    <div class="container" id="form">
+      <div class="box">
+          <h3>Feedback Form</h3>
+          <form id="feedbackForm">
+              <fieldset>
+                  <legend>Personal Details</legend>
+                  <div class="input-group">
+                      <label for="name"><i class="fas fa-user"></i></label>
+                      <input type="text" placeholder="Name" id="name" name="name" required>
+                  </div>
+                  <div class="input-group">
+                      <label for="email"><i class="fas fa-envelope"></i></label>
+                      <input type="email" placeholder="Email" id="email" name="email" required>
+                  </div>               
+                  <div class="input-group">
+                      <label for="phone"><i class="fas fa-phone"></i></label>
+                      <input type="tel" placeholder="Phone Number" id="phone" name="phone" required>
+                  </div>
+                  <div class="input-group">
+                      <label for="address"><i class="fas fa-map-marker-alt"></i></label>
+                      <input type="text" placeholder="Address" id="address" name="address" required>
+                  </div>
+
+                  <div class="input-group">
+                      <label for="country">Country:</label>
+                      <input list="countries" id="country" name="country" placeholder="Start typing...">
+                      <datalist id="countries">
+                          <option value="Sri Lanka">
+                          <option value="Australia">
+                          <option value="India">
+                          <option value="USA">
+                          <option value="UK">
+                          <option value="Canada">
+                      </datalist>
+                  </div>
+              </fieldset>
+          
+              <fieldset>
+                  <legend>Feedback Details</legend>
+                  <div class="input-group">
+                      <label for="message"></label>
+                      <textarea placeholder="Message" id="message" name="message" rows="4" required></textarea>
+                  </div>
+                  
+                  <div class="input-group">
+                      <label for="feedback-date"><i class="fas fa-calendar-alt"></i></label>
+                      <input type="date" id="feedback-date" name="feedback-date" required>
+                  </div>
+                  <div class="input-group">
+                      <label for="service">Service Used:</label>
+                      <select id="service" name="service" required>
+                          <option value="">Select a service</option>
+                          <option value="solar-installation">Solar Installation</option>
+                          <option value="battery-replacement">Battery Replacement</option>
+                          <option value="maintenance">Maintenance</option>
+                      </select>
+                  </div>
+                  <div class="input-group">
+                      <label for="issues">Select Issues Faced:</label>
+                      <select id="issues" name="issues[]" multiple>
+                          <option value="delay">Service Delay</option>
+                          <option value="quality">Poor Quality</option>
+                          <option value="support">Customer Support Issue</option>
+                      </select>
+                  </div>
+
+                  <div class="input-group">
+                      <label>Preferred Contact Method:</label>
+                      <label><input type="checkbox" name="contactMethod" value="Email"> Email</label>
+                      <label><input type="checkbox" name="contactMethod" value="Phone"> Phone</label>
+                  </div>
+                  <div class="input-group">
+                      
+                          <label>Overall Satisfaction:</label>
+                          <label><input type="radio" name="satisfaction" value="Satisfied" required> Satisfied</label>
+                          <label><input type="radio" name="satisfaction" value="Neutral"> Neutral</label>
+                          <label><input type="radio" name="satisfaction" value="Dissatisfied"> Dissatisfied</label>
+                      
+                  </div>
+                  
+                  <div class="input-group">
+                      <label for="attachment">Upload Screenshot:</label>
+                      <input type="file" id="attachment" name="attachment">
+                  </div>
+                  
+                  <div class="rating">
+                      <input type="radio" id="star5" name="rating" value="5">
+                      <label for="star5">⭐</label>
+                      <input type="radio" id="star4" name="rating" value="4">
+                      <label for="star4">⭐</label>
+                      <input type="radio" id="star3" name="rating" value="3">
+                      <label for="star3">⭐</label>
+                      <input type="radio" id="star2" name="rating" value="2">
+                      <label for="star2">⭐</label>
+                      <input type="radio" id="star1" name="rating" value="1">
+                      <label for="star1">⭐</label>
+                  </div>
+              </fieldset>
+          
+              <div class="button">
+                  <button type="submit">Submit</button>
+              </div>
+          </form>
+          
+      </div>
+  </div>
+
+    <footer class="section footer">
+      <div class="footer-cont-main">
+        <div class="footer-logo">
+          <a href="home.html"><img src="images/ecovlotlogotrns.png" alt="Footer Logo" class="footer-img"></a>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/SustDev" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/SustDev" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/user/uncsd2012/featured" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.flickr.com/photos/sustdev/" class="social-icon"><i class="fab fa-flickr"></i></a>
+          </div>
+        </div>
+        <div class="footer-cont">
+          <div class="use-links">
+            <h4>Website Links</h4>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="table.html">Table</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-cont">
+          <div class="use-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="https://www.globalgoals.org/terms-conditions/" >Conditions</a></li>
+              <li><a href="https://www.globalgoals.org/privacy-policy/" >Privacy Policy</a></li>
+              <li><a href="https://www.globalgoals.org/cookies/" >Cookies</a></li>
+              <li><a href="https://www.globalgoals.org/anti-corruption/" >Anti Corruption</a></li>
+              <li><a href="https://www.globalgoals.org/asset-licence/" >Asset License</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-cont">
+          <div class="cont-pages">
+            <h4>Content Pages</h4>
+            <ul>
+              <li><a href="content_ST1.html" >Content 01</a></li>
+              <li><a href="content_ST2.html" >Content 02</a></li>
+              <li><a href="content_ST3.html" >Content 03</a></li>
+              <li><a href="content_ST4.html" >Content 04</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-cont">
+          <div class="our-team">
+            <h4>Editor Pages</h4>
+            <ul>
+              <li><a href="pageEditor_ST1.html" >Student 01</a></li>
+              <li><a href="pageEditor_ST2.html" >Student 02</a></li>
+              <li><a href="pageEditor_ST3.html" >Student 03</a></li>
+              <li><a href="pageEditor_ST4.html" >Student 04</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-cont">
+          <div class="our-team">
+            <h4>Validation Pages</h4>
+            <ul>
+              <li><a href="validation_ST1.html" >Student 01</a></li>
+              <li><a href="validation_ST2.html" >Student 02</a></li>
+              <li><a href="validation_ST3.html" >Student 03</a></li>
+              <li><a href="validation_ST4.html" >Student 04</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div class="section footer-2">
+        <div class="copyright">
+          <div class="copy-cont">
+            <p>&copy; Copyright <b>United Nations</b>. All rights Reserved.<br>
+              <p>&copy; Copyright <b>EcoVolt</b>. All rights Reserved.<br>              
+            <b>Design By [Group03 Subgroup06](2025)</b></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>

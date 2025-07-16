@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: rgb(255, 220, 220);
+    font-size: 16px;
+}
+
+.container1 {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.section-header .title {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(138, 81, 81);
+    
+    
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.testimonials-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonials-item .name {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.testimonials-item .job {
+    color: gray;
+    font-size: 14px;
+}
+
+.testimonials-item p {
+    margin-top: 15px;
+    color: #444;
+}
+
+.rating {
+    margin-top: 10px;
+    color: #bb8665;
+}
+
+.container1 .button{
+    display: inline-block; 
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.container1 .button:hover{
+    background-color: #29a037;
+}
+
+
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 650px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+}
+
+.box h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+fieldset {
+    width: 100%;
+    border: 2px solid #806bcd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 15px;
+    color: #5e4ab9;
+    background: #e4d8ff;
+    border-radius: 5px;
+}
+
+.input-group {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 40px;
+    padding: 8px;
+}
+
+.input-group label {
+    margin-left: 10px;
+    font-size: 15px;
+    color: #888;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #eee;
+    border-radius: 10px;
+    resize: none;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 25px;
+    cursor: pointer;
+    color: #bbb;
+}
+
+.rating input:checked ~ label {
+    color: #f4b400;
+}
+
+.button button {
+    width: 250px;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    background-color: #806bcd;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button button:hover {
+    background-color: #5e4ab9;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .input-group label {
+        min-width: auto;
+    }
+}
